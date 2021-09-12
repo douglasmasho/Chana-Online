@@ -22,9 +22,12 @@ namespace Chana_Online
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
+        private void Form1_Load(object sender, EventArgs e) { 
+            panelCart.Visible = false;
+            panelShop.Visible = true;
+            panelButchery.Visible = false;
+            panelGrocery.Visible = false;
+            panelLiqour.Visible = false;
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -43,6 +46,89 @@ namespace Chana_Online
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnMeat_Click(object sender, EventArgs e)
+        {
+            panelShop.Visible = false;
+            panelButchery.Visible = true;
+        }
+
+        private void btnFood_Click(object sender, EventArgs e)
+        {
+            panelCart.Visible = false;
+            panelShop.Visible = true;
+            panelButchery.Visible = false;
+            panelGrocery.Visible = true;
+            panelLiqour.Visible = false;
+        }
+
+        private void btnLiqour_Click(object sender, EventArgs e)
+        {
+            panelCart.Visible = false;
+            panelShop.Visible = true;
+            panelButchery.Visible = false;
+            panelGrocery.Visible = false;
+            panelLiqour.Visible = true;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCart1_Click(object sender, EventArgs e)
+        {
+            panelCart.Visible = true;
+            panelShop.Visible = true;
+            panelButchery.Visible = false;
+            panelGrocery.Visible = false;
+            panelLiqour.Visible = false;
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+
+        }
+
+        private void panelButchery_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnShop_Click(object sender, EventArgs e)
+        {
+            panelCart.Visible = false;
+            panelShop.Visible = true;
+            panelButchery.Visible = false;
+            panelGrocery.Visible = false;
+            panelLiqour.Visible = false;
+        }
+
+        private void label16_Click(object sender, EventArgs e)
         {
 
         }
