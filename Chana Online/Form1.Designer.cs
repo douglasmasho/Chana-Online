@@ -76,6 +76,83 @@ namespace Chana_Online
             this.button5 = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button8 = new System.Windows.Forms.Button();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.button9 = new System.Windows.Forms.Button();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.button10 = new System.Windows.Forms.Button();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.button13 = new System.Windows.Forms.Button();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label49 = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
+            this.label51 = new System.Windows.Forms.Label();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.button14 = new System.Windows.Forms.Button();
+            this.label52 = new System.Windows.Forms.Label();
+            this.label53 = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
+            this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
+            this.label55 = new System.Windows.Forms.Label();
+            this.label56 = new System.Windows.Forms.Label();
+            this.label57 = new System.Windows.Forms.Label();
+            this.label58 = new System.Windows.Forms.Label();
+            this.label59 = new System.Windows.Forms.Label();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.button15 = new System.Windows.Forms.Button();
+            this.label60 = new System.Windows.Forms.Label();
+            this.label61 = new System.Windows.Forms.Label();
+            this.label62 = new System.Windows.Forms.Label();
+            this.numericUpDown6 = new System.Windows.Forms.NumericUpDown();
+            this.label63 = new System.Windows.Forms.Label();
+            this.label64 = new System.Windows.Forms.Label();
+            this.label65 = new System.Windows.Forms.Label();
+            this.label66 = new System.Windows.Forms.Label();
+            this.label67 = new System.Windows.Forms.Label();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.panelShop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -87,6 +164,25 @@ namespace Chana_Online
             this.panelGrocery.SuspendLayout();
             this.panelLiqour.SuspendLayout();
             this.panelCart.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.groupBox5.SuspendLayout();
+            this.groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.groupBox7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.SuspendLayout();
             // 
             // panelShop
@@ -224,6 +320,9 @@ namespace Chana_Online
             // 
             // panelButchery
             // 
+            this.panelButchery.Controls.Add(this.groupBox7);
+            this.panelButchery.Controls.Add(this.groupBox6);
+            this.panelButchery.Controls.Add(this.groupBox5);
             this.panelButchery.Controls.Add(this.groupBox1);
             this.panelButchery.Controls.Add(this.btnShop);
             this.panelButchery.Controls.Add(this.btnCart1);
@@ -232,12 +331,13 @@ namespace Chana_Online
             this.panelButchery.Font = new System.Drawing.Font("Product Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.panelButchery.Location = new System.Drawing.Point(9, 12);
             this.panelButchery.Name = "panelButchery";
-            this.panelButchery.Size = new System.Drawing.Size(1127, 858);
+            this.panelButchery.Size = new System.Drawing.Size(1182, 1098);
             this.panelButchery.TabIndex = 22;
             this.panelButchery.Paint += new System.Windows.Forms.PaintEventHandler(this.panelButchery_Paint);
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Controls.Add(this.button7);
             this.groupBox1.Controls.Add(this.meatTotal1);
             this.groupBox1.Controls.Add(this.label17);
@@ -582,13 +682,768 @@ namespace Chana_Online
             this.label12.TabIndex = 24;
             this.label12.Text = "Chana__";
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.button8);
+            this.groupBox2.Controls.Add(this.label18);
+            this.groupBox2.Controls.Add(this.label19);
+            this.groupBox2.Controls.Add(this.label20);
+            this.groupBox2.Controls.Add(this.numericUpDown1);
+            this.groupBox2.Controls.Add(this.label21);
+            this.groupBox2.Controls.Add(this.label22);
+            this.groupBox2.Controls.Add(this.label23);
+            this.groupBox2.Controls.Add(this.label24);
+            this.groupBox2.Controls.Add(this.label25);
+            this.groupBox2.Controls.Add(this.pictureBox4);
+            this.groupBox2.Font = new System.Drawing.Font("Product Sans", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.groupBox2.Location = new System.Drawing.Point(8, 8);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(1015, 209);
+            this.groupBox2.TabIndex = 17;
+            this.groupBox2.TabStop = false;
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(854, 84);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(142, 34);
+            this.button8.TabIndex = 9;
+            this.button8.Text = "Add to cart";
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(503, 134);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(25, 25);
+            this.label18.TabIndex = 8;
+            this.label18.Text = "0";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(287, 134);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(197, 25);
+            this.label19.TabIndex = 7;
+            this.label19.Text = "Total Cost(vat incl.):";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(287, 81);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(50, 25);
+            this.label20.TabIndex = 6;
+            this.label20.Text = "KGs";
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(354, 79);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(88, 32);
+            this.numericUpDown1.TabIndex = 0;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(958, 28);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(38, 25);
+            this.label21.TabIndex = 5;
+            this.label21.Text = "00";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(862, 28);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(55, 25);
+            this.label22.TabIndex = 4;
+            this.label22.Text = "VAT:";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(427, 28);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(38, 25);
+            this.label23.TabIndex = 3;
+            this.label23.Text = "00";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(287, 28);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(134, 25);
+            this.label24.TabIndex = 2;
+            this.label24.Text = "Cost(N$/kg):";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(32, 161);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(157, 25);
+            this.label25.TabIndex = 1;
+            this.label25.Text = "butcheryName1";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Location = new System.Drawing.Point(34, 31);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(150, 118);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 0;
+            this.pictureBox4.TabStop = false;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.groupBox3);
+            this.panel1.Controls.Add(this.groupBox4);
+            this.panel1.Controls.Add(this.button11);
+            this.panel1.Controls.Add(this.button12);
+            this.panel1.Controls.Add(this.label42);
+            this.panel1.Controls.Add(this.label43);
+            this.panel1.Font = new System.Drawing.Font("Product Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.panel1.Location = new System.Drawing.Point(8, 8);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1127, 858);
+            this.panel1.TabIndex = 23;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.button9);
+            this.groupBox3.Controls.Add(this.label26);
+            this.groupBox3.Controls.Add(this.label27);
+            this.groupBox3.Controls.Add(this.label28);
+            this.groupBox3.Controls.Add(this.numericUpDown2);
+            this.groupBox3.Controls.Add(this.label29);
+            this.groupBox3.Controls.Add(this.label30);
+            this.groupBox3.Controls.Add(this.label31);
+            this.groupBox3.Controls.Add(this.label32);
+            this.groupBox3.Controls.Add(this.label33);
+            this.groupBox3.Controls.Add(this.pictureBox5);
+            this.groupBox3.Font = new System.Drawing.Font("Product Sans", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.groupBox3.Location = new System.Drawing.Point(33, 373);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(1015, 209);
+            this.groupBox3.TabIndex = 17;
+            this.groupBox3.TabStop = false;
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(854, 84);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(142, 34);
+            this.button9.TabIndex = 9;
+            this.button9.Text = "Add to cart";
+            this.button9.UseVisualStyleBackColor = true;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(503, 134);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(25, 25);
+            this.label26.TabIndex = 8;
+            this.label26.Text = "0";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(287, 134);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(197, 25);
+            this.label27.TabIndex = 7;
+            this.label27.Text = "Total Cost(vat incl.):";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(287, 81);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(50, 25);
+            this.label28.TabIndex = 6;
+            this.label28.Text = "KGs";
+            // 
+            // numericUpDown2
+            // 
+            this.numericUpDown2.Location = new System.Drawing.Point(354, 79);
+            this.numericUpDown2.Name = "numericUpDown2";
+            this.numericUpDown2.Size = new System.Drawing.Size(88, 32);
+            this.numericUpDown2.TabIndex = 0;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(958, 28);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(38, 25);
+            this.label29.TabIndex = 5;
+            this.label29.Text = "00";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(862, 28);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(55, 25);
+            this.label30.TabIndex = 4;
+            this.label30.Text = "VAT:";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(427, 28);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(38, 25);
+            this.label31.TabIndex = 3;
+            this.label31.Text = "00";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(287, 28);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(134, 25);
+            this.label32.TabIndex = 2;
+            this.label32.Text = "Cost(N$/kg):";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(32, 161);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(157, 25);
+            this.label33.TabIndex = 1;
+            this.label33.Text = "butcheryName1";
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Location = new System.Drawing.Point(34, 31);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(150, 118);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 0;
+            this.pictureBox5.TabStop = false;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.button10);
+            this.groupBox4.Controls.Add(this.label34);
+            this.groupBox4.Controls.Add(this.label35);
+            this.groupBox4.Controls.Add(this.label36);
+            this.groupBox4.Controls.Add(this.numericUpDown3);
+            this.groupBox4.Controls.Add(this.label37);
+            this.groupBox4.Controls.Add(this.label38);
+            this.groupBox4.Controls.Add(this.label39);
+            this.groupBox4.Controls.Add(this.label40);
+            this.groupBox4.Controls.Add(this.label41);
+            this.groupBox4.Controls.Add(this.pictureBox6);
+            this.groupBox4.Font = new System.Drawing.Font("Product Sans", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.groupBox4.Location = new System.Drawing.Point(33, 124);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(1015, 209);
+            this.groupBox4.TabIndex = 16;
+            this.groupBox4.TabStop = false;
+            // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(854, 84);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(142, 34);
+            this.button10.TabIndex = 9;
+            this.button10.Text = "Add to cart";
+            this.button10.UseVisualStyleBackColor = true;
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(503, 134);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(25, 25);
+            this.label34.TabIndex = 8;
+            this.label34.Text = "0";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(287, 134);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(197, 25);
+            this.label35.TabIndex = 7;
+            this.label35.Text = "Total Cost(vat incl.):";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(287, 81);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(50, 25);
+            this.label36.TabIndex = 6;
+            this.label36.Text = "KGs";
+            // 
+            // numericUpDown3
+            // 
+            this.numericUpDown3.Location = new System.Drawing.Point(354, 79);
+            this.numericUpDown3.Name = "numericUpDown3";
+            this.numericUpDown3.Size = new System.Drawing.Size(88, 32);
+            this.numericUpDown3.TabIndex = 0;
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(958, 28);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(38, 25);
+            this.label37.TabIndex = 5;
+            this.label37.Text = "00";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(862, 28);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(55, 25);
+            this.label38.TabIndex = 4;
+            this.label38.Text = "VAT:";
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Location = new System.Drawing.Point(427, 28);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(38, 25);
+            this.label39.TabIndex = 3;
+            this.label39.Text = "00";
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Location = new System.Drawing.Point(287, 28);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(134, 25);
+            this.label40.TabIndex = 2;
+            this.label40.Text = "Cost(N$/kg):";
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Location = new System.Drawing.Point(32, 161);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(157, 25);
+            this.label41.TabIndex = 1;
+            this.label41.Text = "butcheryName1";
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Location = new System.Drawing.Point(34, 31);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(150, 118);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 0;
+            this.pictureBox6.TabStop = false;
+            // 
+            // button11
+            // 
+            this.button11.Location = new System.Drawing.Point(716, 19);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(158, 60);
+            this.button11.TabIndex = 15;
+            this.button11.Text = "Shop";
+            this.button11.UseVisualStyleBackColor = true;
+            // 
+            // button12
+            // 
+            this.button12.Location = new System.Drawing.Point(900, 20);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(158, 60);
+            this.button12.TabIndex = 14;
+            this.button12.Text = "Cart";
+            this.button12.UseVisualStyleBackColor = true;
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Font = new System.Drawing.Font("Product Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label42.Location = new System.Drawing.Point(181, 27);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(174, 46);
+            this.label42.TabIndex = 13;
+            this.label42.Text = "Butchery";
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Bulletto Killa¬", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label43.ForeColor = System.Drawing.Color.Red;
+            this.label43.Location = new System.Drawing.Point(30, 19);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(157, 56);
+            this.label43.TabIndex = 12;
+            this.label43.Text = "Chana__";
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.button14);
+            this.groupBox5.Controls.Add(this.label52);
+            this.groupBox5.Controls.Add(this.label53);
+            this.groupBox5.Controls.Add(this.label54);
+            this.groupBox5.Controls.Add(this.numericUpDown5);
+            this.groupBox5.Controls.Add(this.label55);
+            this.groupBox5.Controls.Add(this.label56);
+            this.groupBox5.Controls.Add(this.label57);
+            this.groupBox5.Controls.Add(this.label58);
+            this.groupBox5.Controls.Add(this.label59);
+            this.groupBox5.Controls.Add(this.pictureBox8);
+            this.groupBox5.Font = new System.Drawing.Font("Product Sans", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.groupBox5.Location = new System.Drawing.Point(43, 384);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(1015, 209);
+            this.groupBox5.TabIndex = 18;
+            this.groupBox5.TabStop = false;
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.button13);
+            this.groupBox6.Controls.Add(this.label44);
+            this.groupBox6.Controls.Add(this.label45);
+            this.groupBox6.Controls.Add(this.label46);
+            this.groupBox6.Controls.Add(this.numericUpDown4);
+            this.groupBox6.Controls.Add(this.label47);
+            this.groupBox6.Controls.Add(this.label48);
+            this.groupBox6.Controls.Add(this.label49);
+            this.groupBox6.Controls.Add(this.label50);
+            this.groupBox6.Controls.Add(this.label51);
+            this.groupBox6.Controls.Add(this.pictureBox7);
+            this.groupBox6.Font = new System.Drawing.Font("Product Sans", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.groupBox6.Location = new System.Drawing.Point(37, 383);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(1015, 209);
+            this.groupBox6.TabIndex = 17;
+            this.groupBox6.TabStop = false;
+            // 
+            // button13
+            // 
+            this.button13.Location = new System.Drawing.Point(854, 84);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(142, 34);
+            this.button13.TabIndex = 9;
+            this.button13.Text = "Add to cart";
+            this.button13.UseVisualStyleBackColor = true;
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Location = new System.Drawing.Point(503, 134);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(25, 25);
+            this.label44.TabIndex = 8;
+            this.label44.Text = "0";
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Location = new System.Drawing.Point(287, 134);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(197, 25);
+            this.label45.TabIndex = 7;
+            this.label45.Text = "Total Cost(vat incl.):";
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Location = new System.Drawing.Point(287, 81);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(50, 25);
+            this.label46.TabIndex = 6;
+            this.label46.Text = "KGs";
+            // 
+            // numericUpDown4
+            // 
+            this.numericUpDown4.Location = new System.Drawing.Point(354, 79);
+            this.numericUpDown4.Name = "numericUpDown4";
+            this.numericUpDown4.Size = new System.Drawing.Size(88, 32);
+            this.numericUpDown4.TabIndex = 0;
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Location = new System.Drawing.Point(958, 28);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(38, 25);
+            this.label47.TabIndex = 5;
+            this.label47.Text = "00";
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Location = new System.Drawing.Point(862, 28);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(55, 25);
+            this.label48.TabIndex = 4;
+            this.label48.Text = "VAT:";
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Location = new System.Drawing.Point(427, 28);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(38, 25);
+            this.label49.TabIndex = 3;
+            this.label49.Text = "00";
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Location = new System.Drawing.Point(287, 28);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(134, 25);
+            this.label50.TabIndex = 2;
+            this.label50.Text = "Cost(N$/kg):";
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Location = new System.Drawing.Point(32, 161);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(157, 25);
+            this.label51.TabIndex = 1;
+            this.label51.Text = "butcheryName1";
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Location = new System.Drawing.Point(34, 31);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(150, 118);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 0;
+            this.pictureBox7.TabStop = false;
+            // 
+            // button14
+            // 
+            this.button14.Location = new System.Drawing.Point(854, 84);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(142, 34);
+            this.button14.TabIndex = 9;
+            this.button14.Text = "Add to cart";
+            this.button14.UseVisualStyleBackColor = true;
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Location = new System.Drawing.Point(503, 134);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(25, 25);
+            this.label52.TabIndex = 8;
+            this.label52.Text = "0";
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Location = new System.Drawing.Point(287, 134);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(197, 25);
+            this.label53.TabIndex = 7;
+            this.label53.Text = "Total Cost(vat incl.):";
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Location = new System.Drawing.Point(287, 81);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(50, 25);
+            this.label54.TabIndex = 6;
+            this.label54.Text = "KGs";
+            // 
+            // numericUpDown5
+            // 
+            this.numericUpDown5.Location = new System.Drawing.Point(354, 79);
+            this.numericUpDown5.Name = "numericUpDown5";
+            this.numericUpDown5.Size = new System.Drawing.Size(88, 32);
+            this.numericUpDown5.TabIndex = 0;
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Location = new System.Drawing.Point(958, 28);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(38, 25);
+            this.label55.TabIndex = 5;
+            this.label55.Text = "00";
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Location = new System.Drawing.Point(862, 28);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(55, 25);
+            this.label56.TabIndex = 4;
+            this.label56.Text = "VAT:";
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Location = new System.Drawing.Point(427, 28);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(38, 25);
+            this.label57.TabIndex = 3;
+            this.label57.Text = "00";
+            // 
+            // label58
+            // 
+            this.label58.AutoSize = true;
+            this.label58.Location = new System.Drawing.Point(287, 28);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(134, 25);
+            this.label58.TabIndex = 2;
+            this.label58.Text = "Cost(N$/kg):";
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Location = new System.Drawing.Point(32, 161);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(157, 25);
+            this.label59.TabIndex = 1;
+            this.label59.Text = "butcheryName1";
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Location = new System.Drawing.Point(34, 31);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(150, 118);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 0;
+            this.pictureBox8.TabStop = false;
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.button15);
+            this.groupBox7.Controls.Add(this.label60);
+            this.groupBox7.Controls.Add(this.label61);
+            this.groupBox7.Controls.Add(this.label62);
+            this.groupBox7.Controls.Add(this.numericUpDown6);
+            this.groupBox7.Controls.Add(this.label63);
+            this.groupBox7.Controls.Add(this.label64);
+            this.groupBox7.Controls.Add(this.label65);
+            this.groupBox7.Controls.Add(this.label66);
+            this.groupBox7.Controls.Add(this.label67);
+            this.groupBox7.Controls.Add(this.pictureBox9);
+            this.groupBox7.Font = new System.Drawing.Font("Product Sans", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.groupBox7.Location = new System.Drawing.Point(41, 632);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(1015, 209);
+            this.groupBox7.TabIndex = 18;
+            this.groupBox7.TabStop = false;
+            // 
+            // button15
+            // 
+            this.button15.Location = new System.Drawing.Point(854, 84);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(142, 34);
+            this.button15.TabIndex = 9;
+            this.button15.Text = "Add to cart";
+            this.button15.UseVisualStyleBackColor = true;
+            // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.Location = new System.Drawing.Point(503, 134);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(25, 25);
+            this.label60.TabIndex = 8;
+            this.label60.Text = "0";
+            // 
+            // label61
+            // 
+            this.label61.AutoSize = true;
+            this.label61.Location = new System.Drawing.Point(287, 134);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(197, 25);
+            this.label61.TabIndex = 7;
+            this.label61.Text = "Total Cost(vat incl.):";
+            // 
+            // label62
+            // 
+            this.label62.AutoSize = true;
+            this.label62.Location = new System.Drawing.Point(287, 81);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(50, 25);
+            this.label62.TabIndex = 6;
+            this.label62.Text = "KGs";
+            // 
+            // numericUpDown6
+            // 
+            this.numericUpDown6.Location = new System.Drawing.Point(354, 79);
+            this.numericUpDown6.Name = "numericUpDown6";
+            this.numericUpDown6.Size = new System.Drawing.Size(88, 32);
+            this.numericUpDown6.TabIndex = 0;
+            // 
+            // label63
+            // 
+            this.label63.AutoSize = true;
+            this.label63.Location = new System.Drawing.Point(958, 28);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(38, 25);
+            this.label63.TabIndex = 5;
+            this.label63.Text = "00";
+            // 
+            // label64
+            // 
+            this.label64.AutoSize = true;
+            this.label64.Location = new System.Drawing.Point(862, 28);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(55, 25);
+            this.label64.TabIndex = 4;
+            this.label64.Text = "VAT:";
+            // 
+            // label65
+            // 
+            this.label65.AutoSize = true;
+            this.label65.Location = new System.Drawing.Point(427, 28);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(38, 25);
+            this.label65.TabIndex = 3;
+            this.label65.Text = "00";
+            // 
+            // label66
+            // 
+            this.label66.AutoSize = true;
+            this.label66.Location = new System.Drawing.Point(287, 28);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(134, 25);
+            this.label66.TabIndex = 2;
+            this.label66.Text = "Cost(N$/kg):";
+            // 
+            // label67
+            // 
+            this.label67.AutoSize = true;
+            this.label67.Location = new System.Drawing.Point(32, 161);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(157, 25);
+            this.label67.TabIndex = 1;
+            this.label67.Text = "butcheryName1";
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Location = new System.Drawing.Point(34, 31);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(150, 118);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox9.TabIndex = 0;
+            this.pictureBox9.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1148, 882);
+            this.ClientSize = new System.Drawing.Size(1203, 1122);
             this.Controls.Add(this.panelCart);
             this.Controls.Add(this.panelLiqour);
             this.Controls.Add(this.panelGrocery);
@@ -614,6 +1469,32 @@ namespace Chana_Online
             this.panelLiqour.PerformLayout();
             this.panelCart.ResumeLayout(false);
             this.panelCart.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -666,6 +1547,83 @@ namespace Chana_Online
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Label meatTotal1;
+        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Label label60;
+        private System.Windows.Forms.Label label61;
+        private System.Windows.Forms.Label label62;
+        private System.Windows.Forms.NumericUpDown numericUpDown6;
+        private System.Windows.Forms.Label label63;
+        private System.Windows.Forms.Label label64;
+        private System.Windows.Forms.Label label65;
+        private System.Windows.Forms.Label label66;
+        private System.Windows.Forms.Label label67;
+        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.NumericUpDown numericUpDown4;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.Label label51;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.NumericUpDown numericUpDown5;
+        private System.Windows.Forms.Label label55;
+        private System.Windows.Forms.Label label56;
+        private System.Windows.Forms.Label label57;
+        private System.Windows.Forms.Label label58;
+        private System.Windows.Forms.Label label59;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.NumericUpDown numericUpDown3;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Label label43;
     }
 }
 

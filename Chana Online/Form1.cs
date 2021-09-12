@@ -14,6 +14,8 @@ namespace Chana_Online
     {
 
         Meat meat1 = new Meat("Chicken", "https://i.ibb.co/BVG7yGY/breasts.jpg", 60, 0.15);
+        Meat meat2 = new Meat("Sausage", "https://i.ibb.co/rZQzVgY/pork-sausage.jpg", 60, 0.15);
+
         public Form1()
         {
             InitializeComponent();
