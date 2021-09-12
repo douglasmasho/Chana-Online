@@ -74,6 +74,8 @@ namespace Chana_Online
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
+            this.butcheryTotal1 = new System.Windows.Forms.Label();
+            this.button7 = new System.Windows.Forms.Button();
             this.panelShop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -236,6 +238,8 @@ namespace Chana_Online
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button7);
+            this.groupBox1.Controls.Add(this.butcheryTotal1);
             this.groupBox1.Controls.Add(this.label17);
             this.groupBox1.Controls.Add(this.label16);
             this.groupBox1.Controls.Add(this.numericUpDown1);
@@ -251,6 +255,7 @@ namespace Chana_Online
             this.groupBox1.Size = new System.Drawing.Size(1015, 209);
             this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // butcheryVAT1
             // 
@@ -551,11 +556,29 @@ namespace Chana_Online
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(287, 151);
+            this.label17.Location = new System.Drawing.Point(287, 134);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(75, 25);
+            this.label17.Size = new System.Drawing.Size(112, 25);
             this.label17.TabIndex = 7;
-            this.label17.Text = "label17";
+            this.label17.Text = "Total Cost:";
+            // 
+            // butcheryTotal1
+            // 
+            this.butcheryTotal1.AutoSize = true;
+            this.butcheryTotal1.Location = new System.Drawing.Point(417, 134);
+            this.butcheryTotal1.Name = "butcheryTotal1";
+            this.butcheryTotal1.Size = new System.Drawing.Size(25, 25);
+            this.butcheryTotal1.TabIndex = 8;
+            this.butcheryTotal1.Text = "0";
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(854, 84);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(142, 34);
+            this.button7.TabIndex = 9;
+            this.button7.Text = "Add to cart";
+            this.button7.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -639,6 +662,8 @@ namespace Chana_Online
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Label butcheryTotal1;
     }
 }
 
