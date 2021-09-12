@@ -44,12 +44,17 @@ namespace Chana_Online
             this.label1 = new System.Windows.Forms.Label();
             this.panelButchery = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button7 = new System.Windows.Forms.Button();
+            this.meatTotal1 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.meatkgs1 = new System.Windows.Forms.NumericUpDown();
             this.butcheryVAT1 = new System.Windows.Forms.Label();
             this.ll = new System.Windows.Forms.Label();
-            this.butcheryCost1 = new System.Windows.Forms.Label();
+            this.meatCostpkg1 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.butcheryName1 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.meatName1 = new System.Windows.Forms.Label();
+            this.meatPic1 = new System.Windows.Forms.PictureBox();
             this.btnShop = new System.Windows.Forms.Button();
             this.btnCart1 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
@@ -71,22 +76,17 @@ namespace Chana_Online
             this.button5 = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.butcheryTotal1 = new System.Windows.Forms.Label();
-            this.button7 = new System.Windows.Forms.Button();
             this.panelShop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelButchery.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.meatkgs1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.meatPic1)).BeginInit();
             this.panelGrocery.SuspendLayout();
             this.panelLiqour.SuspendLayout();
             this.panelCart.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelShop
@@ -239,16 +239,16 @@ namespace Chana_Online
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.button7);
-            this.groupBox1.Controls.Add(this.butcheryTotal1);
+            this.groupBox1.Controls.Add(this.meatTotal1);
             this.groupBox1.Controls.Add(this.label17);
             this.groupBox1.Controls.Add(this.label16);
-            this.groupBox1.Controls.Add(this.numericUpDown1);
+            this.groupBox1.Controls.Add(this.meatkgs1);
             this.groupBox1.Controls.Add(this.butcheryVAT1);
             this.groupBox1.Controls.Add(this.ll);
-            this.groupBox1.Controls.Add(this.butcheryCost1);
+            this.groupBox1.Controls.Add(this.meatCostpkg1);
             this.groupBox1.Controls.Add(this.label15);
-            this.groupBox1.Controls.Add(this.butcheryName1);
-            this.groupBox1.Controls.Add(this.pictureBox4);
+            this.groupBox1.Controls.Add(this.meatName1);
+            this.groupBox1.Controls.Add(this.meatPic1);
             this.groupBox1.Font = new System.Drawing.Font("Product Sans", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.groupBox1.Location = new System.Drawing.Point(33, 124);
             this.groupBox1.Name = "groupBox1";
@@ -256,6 +256,51 @@ namespace Chana_Online
             this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(854, 84);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(142, 34);
+            this.button7.TabIndex = 9;
+            this.button7.Text = "Add to cart";
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // meatTotal1
+            // 
+            this.meatTotal1.AutoSize = true;
+            this.meatTotal1.Location = new System.Drawing.Point(503, 134);
+            this.meatTotal1.Name = "meatTotal1";
+            this.meatTotal1.Size = new System.Drawing.Size(25, 25);
+            this.meatTotal1.TabIndex = 8;
+            this.meatTotal1.Text = "0";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(287, 134);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(197, 25);
+            this.label17.TabIndex = 7;
+            this.label17.Text = "Total Cost(vat incl.):";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(287, 81);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(50, 25);
+            this.label16.TabIndex = 6;
+            this.label16.Text = "KGs";
+            this.label16.Click += new System.EventHandler(this.label16_Click);
+            // 
+            // meatkgs1
+            // 
+            this.meatkgs1.Location = new System.Drawing.Point(354, 79);
+            this.meatkgs1.Name = "meatkgs1";
+            this.meatkgs1.Size = new System.Drawing.Size(88, 32);
+            this.meatkgs1.TabIndex = 0;
+            this.meatkgs1.ValueChanged += new System.EventHandler(this.meatkgs1_ValueChanged);
             // 
             // butcheryVAT1
             // 
@@ -275,14 +320,14 @@ namespace Chana_Online
             this.ll.TabIndex = 4;
             this.ll.Text = "VAT:";
             // 
-            // butcheryCost1
+            // meatCostpkg1
             // 
-            this.butcheryCost1.AutoSize = true;
-            this.butcheryCost1.Location = new System.Drawing.Point(427, 28);
-            this.butcheryCost1.Name = "butcheryCost1";
-            this.butcheryCost1.Size = new System.Drawing.Size(38, 25);
-            this.butcheryCost1.TabIndex = 3;
-            this.butcheryCost1.Text = "00";
+            this.meatCostpkg1.AutoSize = true;
+            this.meatCostpkg1.Location = new System.Drawing.Point(427, 28);
+            this.meatCostpkg1.Name = "meatCostpkg1";
+            this.meatCostpkg1.Size = new System.Drawing.Size(38, 25);
+            this.meatCostpkg1.TabIndex = 3;
+            this.meatCostpkg1.Text = "00";
             // 
             // label15
             // 
@@ -293,22 +338,23 @@ namespace Chana_Online
             this.label15.TabIndex = 2;
             this.label15.Text = "Cost(N$/kg):";
             // 
-            // butcheryName1
+            // meatName1
             // 
-            this.butcheryName1.AutoSize = true;
-            this.butcheryName1.Location = new System.Drawing.Point(32, 161);
-            this.butcheryName1.Name = "butcheryName1";
-            this.butcheryName1.Size = new System.Drawing.Size(157, 25);
-            this.butcheryName1.TabIndex = 1;
-            this.butcheryName1.Text = "butcheryName1";
+            this.meatName1.AutoSize = true;
+            this.meatName1.Location = new System.Drawing.Point(32, 161);
+            this.meatName1.Name = "meatName1";
+            this.meatName1.Size = new System.Drawing.Size(157, 25);
+            this.meatName1.TabIndex = 1;
+            this.meatName1.Text = "butcheryName1";
             // 
-            // pictureBox4
+            // meatPic1
             // 
-            this.pictureBox4.Location = new System.Drawing.Point(34, 31);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(150, 118);
-            this.pictureBox4.TabIndex = 0;
-            this.pictureBox4.TabStop = false;
+            this.meatPic1.Location = new System.Drawing.Point(34, 31);
+            this.meatPic1.Name = "meatPic1";
+            this.meatPic1.Size = new System.Drawing.Size(150, 118);
+            this.meatPic1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.meatPic1.TabIndex = 0;
+            this.meatPic1.TabStop = false;
             // 
             // btnShop
             // 
@@ -536,50 +582,6 @@ namespace Chana_Online
             this.label12.TabIndex = 24;
             this.label12.Text = "Chana__";
             // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Location = new System.Drawing.Point(354, 79);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(88, 32);
-            this.numericUpDown1.TabIndex = 0;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(287, 81);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(50, 25);
-            this.label16.TabIndex = 6;
-            this.label16.Text = "KGs";
-            this.label16.Click += new System.EventHandler(this.label16_Click);
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(287, 134);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(112, 25);
-            this.label17.TabIndex = 7;
-            this.label17.Text = "Total Cost:";
-            // 
-            // butcheryTotal1
-            // 
-            this.butcheryTotal1.AutoSize = true;
-            this.butcheryTotal1.Location = new System.Drawing.Point(417, 134);
-            this.butcheryTotal1.Name = "butcheryTotal1";
-            this.butcheryTotal1.Size = new System.Drawing.Size(25, 25);
-            this.butcheryTotal1.TabIndex = 8;
-            this.butcheryTotal1.Text = "0";
-            // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(854, 84);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(142, 34);
-            this.button7.TabIndex = 9;
-            this.button7.Text = "Add to cart";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
@@ -604,14 +606,14 @@ namespace Chana_Online
             this.panelButchery.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.meatkgs1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.meatPic1)).EndInit();
             this.panelGrocery.ResumeLayout(false);
             this.panelGrocery.PerformLayout();
             this.panelLiqour.ResumeLayout(false);
             this.panelLiqour.PerformLayout();
             this.panelCart.ResumeLayout(false);
             this.panelCart.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -653,17 +655,17 @@ namespace Chana_Online
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label butcheryCost1;
+        private System.Windows.Forms.Label meatCostpkg1;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label butcheryName1;
-        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Label meatName1;
+        private System.Windows.Forms.PictureBox meatPic1;
         private System.Windows.Forms.Label butcheryVAT1;
         private System.Windows.Forms.Label ll;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown meatkgs1;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Label butcheryTotal1;
+        private System.Windows.Forms.Label meatTotal1;
     }
 }
 
