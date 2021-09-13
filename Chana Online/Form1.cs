@@ -21,6 +21,7 @@ namespace Chana_Online
         Grocery grocery2 = new Grocery("Tastic Rice 1kg", "https://i.ibb.co/HGjQgHX/Tastic-1kg.jpg", 17.99, 0.10);
         Grocery grocery3 = new Grocery("Shells Polana Pasta 1kg", "https://i.ibb.co/hVwQ2Yv/shells-polana-pasta-1kg.jpg", 29.99, 0.10);
 
+        List<object> cart = new List<object>();
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -48,19 +49,17 @@ namespace Chana_Online
             foodPic1.LoadAsync(grocery1.ImageURL);
             foodName1.Text = grocery1.Name;
             foodCost1.Text = Convert.ToString(grocery1.Cost);
-            foodvat1.Text = Convert.ToString(grocery1.VAT);
+            foodVAT1.Text = Convert.ToString(grocery1.VAT);
 
             foodPic2.LoadAsync(grocery2.ImageURL);
-            foodNamee2.Text = grocery2.Name;
+            foodName2.Text = grocery2.Name;
             FoodCost2.Text = Convert.ToString(grocery2.Cost);
-            foodVat2.Text = Convert.ToString(grocery2.VAT);
+            foodVAT2.Text = Convert.ToString(grocery2.VAT);
 
-            foodPicc3.LoadAsync(grocery3.ImageURL);
+            foodPic3.LoadAsync(grocery3.ImageURL);
             foodName3.Text = grocery3.Name;
             foodCost3.Text = Convert.ToString(grocery3.Cost);
-            foodvat3.Text = Convert.ToString(grocery3.VAT);
-
-
+            foodVAT3.Text = Convert.ToString(grocery3.VAT);
         }
 
         public Form1()
@@ -69,11 +68,40 @@ namespace Chana_Online
 
         }
 
+        private void addToCart_Click(object sender, EventArgs e)
+        {
+            var button = sender as Button;
+            System.Diagnostics.Debug.WriteLine(button.Name);
+            switch (button.Name)
+            {
+                case "Meat1":
+                    cart.Add(meat1);
+                    break;
+                case "Meat2":
+                    cart.Add(meat2);
+                    break;
+                case "Meat3":
+                    cart.Add(meat2);
+                    break;
+                default: Console.WriteLine( "do nothing");
+                    break;
+            }
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+
         private void meatkgs1_ValueChanged(object sender, EventArgs e)
         {
             double totalCost = meat1.CostperKG * Convert.ToDouble(meatkgs1.Value) * (1 + meat1.VAT);
 
             meatTotal1.Text = Convert.ToString(totalCost);
+
+            meat1.TotalCost = totalCost;
         }
 
         private void meatkgs2_ValueChanged(object sender, EventArgs e)
@@ -81,6 +109,9 @@ namespace Chana_Online
             double totalCost = meat2.CostperKG * Convert.ToDouble(meatkgs2.Value) * (1 + meat2.VAT);
 
             meatTotal2.Text = Convert.ToString(totalCost);
+
+            meat2.TotalCost = totalCost;
+
         }
 
         private void meatkgs3_ValueChanged(object sender, EventArgs e)
@@ -88,6 +119,9 @@ namespace Chana_Online
             double totalCost = meat3.CostperKG * Convert.ToDouble(meatkgs3.Value) * (1 + meat3.VAT);
 
             meatTotal3.Text = Convert.ToString(totalCost);
+
+            meat3.TotalCost = totalCost;
+
         }
 
         private void groceryNum1_ValueChanged(object sender, EventArgs e)
@@ -95,12 +129,17 @@ namespace Chana_Online
             double totalCost = grocery1.Cost * Convert.ToDouble(groceryNum1.Value) * (1 + grocery1.VAT);
 
             foodTotal1.Text = Convert.ToString(totalCost);
+
+            grocery1.TotalCost = totalCost;
         }
         private void groceryNum2_ValueChanged(object sender, EventArgs e)
         {
             double totalCost = grocery2.Cost * Convert.ToDouble(groceryNum2.Value) * (1 + grocery2.VAT);
 
             foodTotal2.Text = Convert.ToString(totalCost);
+
+            grocery2.TotalCost = totalCost;
+
         }
 
         private void groceryNum3_ValueChanged(object sender, EventArgs e)
@@ -108,6 +147,9 @@ namespace Chana_Online
             double totalCost = grocery3.Cost * Convert.ToDouble(groceryNum3.Value) * (1 + grocery3.VAT);
 
             foodTotal3.Text = Convert.ToString(totalCost);
+
+            grocery3.TotalCost = totalCost;
+
         }
 
         private void btnShop_Click(object sender, EventArgs e)

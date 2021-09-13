@@ -8,11 +8,13 @@ namespace Chana_Online
     {
         public string Name { get; set; }
         public string ImageURL { get; set; }
+        public double TotalCost { get; set; }
 
         public Product(string name, string imageURL)
         {
             this.Name = name;
             this.ImageURL = imageURL;
+            this.TotalCost = 0;
         }
 
     }
