@@ -7,11 +7,9 @@ namespace Chana_Online
     class Meat : Product
     {
         public double CostperKG { get; set; }
-        public double VAT { get; set; }
-        public Meat(string name, string imageURL, double costPerKG, double vat) : base(name, imageURL)
+        public Meat(string name, string imageURL, double costPerKG, double vat) : base(name, imageURL, vat, "0")
         {
             this.CostperKG = costPerKG;
-            this.VAT = vat;
         }
     }
 }

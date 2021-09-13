@@ -7,12 +7,10 @@ namespace Chana_Online
     class Grocery : Product
     {
         public double Cost { get; set; }
-        public double VAT { get; set; }
 
-        public Grocery(string name, string imageURL, double cost, double vat) : base(name, imageURL)
+        public Grocery(string name, string imageURL, double cost, double vat) : base(name, imageURL,vat,"0")
         {
             this.Cost = cost;
-            this.VAT = vat;
         }
     }
 }
