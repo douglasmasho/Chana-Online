@@ -10,15 +10,17 @@ namespace Chana_Online
 {
     public partial class FormLiqour : Form
     {
-        public FormLiqour()
+        FormCart fcart;
+        public FormLiqour(FormCart fc)
         {
             InitializeComponent();
+            this.fcart = fc;
         }
 
         private void showCart(object sender, EventArgs e)
         {
             FormCart f = new FormCart();
-            f.Show();
+            fcart.Show();
         }
 
         private void showShop(object sender, EventArgs e)

@@ -108,8 +108,7 @@ namespace Chana_Online
 
         private void showCart(object sender, EventArgs e)
         {
-            FormCart f = new FormCart();
-            f.Show();
+            fcart.Show();
         }
 
         private void showForm(object sender, EventArgs e)

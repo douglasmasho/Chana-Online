@@ -35,11 +35,6 @@ namespace Chana_Online
         {
 
         }
-
-
-
-       
-
         
         private void btnShop_Click(object sender, EventArgs e)
         {
@@ -55,7 +50,7 @@ namespace Chana_Online
 
         private void btnLiqour_Click(object sender, EventArgs e)
         {
-            FormLiqour f = new FormLiqour();
+            FormLiqour f = new FormLiqour(fcart);
             f.Show();
         }
 

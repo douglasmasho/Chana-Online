@@ -14,7 +14,7 @@ namespace Chana_Online
         Grocery grocery2 = new Grocery("Tastic Rice 1kg", "https://i.ibb.co/HGjQgHX/Tastic-1kg.jpg", 17.99, 0.10);
         Grocery grocery3 = new Grocery("Shells Polana Pasta 1kg", "https://i.ibb.co/hVwQ2Yv/shells-polana-pasta-1kg.jpg", 29.99, 0.10);
 
-        FormCart fcart = new FormCart();
+        FormCart fcart;
         public FormGrocery(FormCart fc)
         {
             InitializeComponent();
