@@ -10,6 +10,7 @@ namespace Chana_Online
 {
     public partial class FormCart : Form
     {
+        
         public FormCart()
         {
             InitializeComponent();
@@ -20,15 +21,24 @@ namespace Chana_Online
 
         }
 
+
+        //this function is responsible for adding the items to the cart
+        //the function will accept the item details as arguments and add them to the cart
         public void AddItemsToCart(string Name, string Quantity, double VAT, double TotalCost)
         {
-            System.Diagnostics.Debug.WriteLine("2444444");
             GridViewButchery.Rows.Add(Name, Quantity, VAT, TotalCost);
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             AddItemsToCart("ijioi", "frrever", 23, 323);
+        }
+
+        private void showShop(object sender, EventArgs e)
+        {
+            Form1 f = new Form1();
+            f.Show();
         }
     }
 }

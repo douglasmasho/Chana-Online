@@ -499,7 +499,7 @@ namespace Chana_Online
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1296, 1122);
+            this.ClientSize = new System.Drawing.Size(1296, 1050);
             this.Controls.Add(this.panelButchery);
             this.Name = "FormButchery";
             this.Text = "FormButchery";

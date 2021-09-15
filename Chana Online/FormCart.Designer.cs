@@ -49,9 +49,7 @@ namespace Chana_Online
             this.VATFood = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TotalFood = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label13 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.panelCart.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridViewLiqour)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GridViewButchery)).BeginInit();
@@ -60,7 +58,6 @@ namespace Chana_Online
             // 
             // panelCart
             // 
-            this.panelCart.Controls.Add(this.button1);
             this.panelCart.Controls.Add(this.label3);
             this.panelCart.Controls.Add(this.GridViewLiqour);
             this.panelCart.Controls.Add(this.label2);
@@ -68,7 +65,6 @@ namespace Chana_Online
             this.panelCart.Controls.Add(this.label1);
             this.panelCart.Controls.Add(this.GridViewGrocery);
             this.panelCart.Controls.Add(this.label13);
-            this.panelCart.Controls.Add(this.button6);
             this.panelCart.Controls.Add(this.label14);
             this.panelCart.Location = new System.Drawing.Point(55, 47);
             this.panelCart.Name = "panelCart";
@@ -266,16 +262,6 @@ namespace Chana_Online
             this.label13.TabIndex = 27;
             this.label13.Text = "Cart";
             // 
-            // button6
-            // 
-            this.button6.Font = new System.Drawing.Font("Product Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button6.Location = new System.Drawing.Point(903, 26);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(158, 60);
-            this.button6.TabIndex = 26;
-            this.button6.Text = "Shop";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
             // label14
             // 
             this.label14.AutoSize = true;
@@ -287,22 +273,12 @@ namespace Chana_Online
             this.label14.TabIndex = 24;
             this.label14.Text = "Chana__Online_";
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(643, 41);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(112, 34);
-            this.button1.TabIndex = 34;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // FormCart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1299, 1066);
+            this.ClientSize = new System.Drawing.Size(1299, 1050);
             this.Controls.Add(this.panelCart);
             this.Name = "FormCart";
             this.Text = "FormCart";
@@ -318,7 +294,6 @@ namespace Chana_Online
 
         #endregion
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
@@ -339,6 +314,5 @@ namespace Chana_Online
         public System.Windows.Forms.DataGridView GridViewGrocery;
         public System.Windows.Forms.DataGridView GridViewLiqour;
         public System.Windows.Forms.DataGridView GridViewButchery;
-        private System.Windows.Forms.Button button1;
     }
 }

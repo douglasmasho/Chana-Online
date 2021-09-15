@@ -67,19 +67,25 @@ namespace Chana_Online
 
         private void addMeatToCart(Meat meat)
         {
-            fcart.GridViewButchery.Rows.Add(meat.Name, meat.Quantity, meat.VAT, meat.TotalCost);
+            if(meat.Quantity != "0")
+            {
+                fcart.GridViewButchery.Rows.Add(meat.Name, meat.Quantity, meat.VAT, meat.TotalCost);
+            }
         }
 
 
         private void meatkgs1_ValueChanged(object sender, EventArgs e)
         {
+            //calculate the total cost
+            //save it in a variable
             double totalCost = Math.Round(meat1.CostperKG * Convert.ToDouble(meatkgs1.Value) * (1 + meat1.VAT),2);
 
+            //assign it to the the TotalCost property in the object and display it
             meatTotal1.Text = Convert.ToString(totalCost);
-
             meat1.TotalCost = totalCost;
-            meat1.Quantity = $"{Convert.ToString(meatkgs1.Value)} kg";
 
+            //assign the quantity to the Quantity property of the object
+            meat1.Quantity = $"{Convert.ToString(meatkgs1.Value)} kg";
         }
 
         private void meatkgs2_ValueChanged(object sender, EventArgs e)
@@ -90,8 +96,6 @@ namespace Chana_Online
 
             meat2.TotalCost = totalCost;
             meat2.Quantity = $"{Convert.ToString(meatkgs2.Value)} kg";
-
-
         }
 
         private void meatkgs3_ValueChanged(object sender, EventArgs e)
@@ -108,7 +112,7 @@ namespace Chana_Online
 
         private void showCart(object sender, EventArgs e)
         {
-            fcart.Show();
+            fcart.Focus();
         }
 
         private void showForm(object sender, EventArgs e)

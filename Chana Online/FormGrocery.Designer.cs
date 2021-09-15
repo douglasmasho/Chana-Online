@@ -33,7 +33,7 @@ namespace Chana_Online
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.Quantity = new System.Windows.Forms.Label();
             this.groceryNum3 = new System.Windows.Forms.NumericUpDown();
-            this.button16 = new System.Windows.Forms.Button();
+            this.addFood3 = new System.Windows.Forms.Button();
             this.foodTotal3 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.foodVAT3 = new System.Windows.Forms.Label();
@@ -67,6 +67,8 @@ namespace Chana_Online
             this.button2 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.addFood2 = new System.Windows.Forms.Button();
+            this.addFood1 = new System.Windows.Forms.Button();
             this.panelGrocery.SuspendLayout();
             this.groupBox8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groceryNum3)).BeginInit();
@@ -97,7 +99,7 @@ namespace Chana_Online
             // 
             this.groupBox8.Controls.Add(this.Quantity);
             this.groupBox8.Controls.Add(this.groceryNum3);
-            this.groupBox8.Controls.Add(this.button16);
+            this.groupBox8.Controls.Add(this.addFood3);
             this.groupBox8.Controls.Add(this.foodTotal3);
             this.groupBox8.Controls.Add(this.label21);
             this.groupBox8.Controls.Add(this.foodVAT3);
@@ -129,14 +131,15 @@ namespace Chana_Online
             this.groceryNum3.TabIndex = 10;
             this.groceryNum3.ValueChanged += new System.EventHandler(this.groceryNum3_ValueChanged);
             // 
-            // button16
+            // addFood3
             // 
-            this.button16.Location = new System.Drawing.Point(854, 84);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(142, 34);
-            this.button16.TabIndex = 9;
-            this.button16.Text = "Add to cart";
-            this.button16.UseVisualStyleBackColor = true;
+            this.addFood3.Location = new System.Drawing.Point(854, 84);
+            this.addFood3.Name = "addFood3";
+            this.addFood3.Size = new System.Drawing.Size(142, 34);
+            this.addFood3.TabIndex = 9;
+            this.addFood3.Text = "Add to cart";
+            this.addFood3.UseVisualStyleBackColor = true;
+            this.addFood3.Click += new System.EventHandler(this.addToCart_Click);
             // 
             // foodTotal3
             // 
@@ -203,6 +206,7 @@ namespace Chana_Online
             // 
             // groupBox5
             // 
+            this.groupBox5.Controls.Add(this.addFood2);
             this.groupBox5.Controls.Add(this.foodTotal2);
             this.groupBox5.Controls.Add(this.label49);
             this.groupBox5.Controls.Add(this.groceryNum2);
@@ -311,6 +315,7 @@ namespace Chana_Online
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.addFood1);
             this.groupBox2.Controls.Add(this.label25);
             this.groupBox2.Controls.Add(this.foodTotal1);
             this.groupBox2.Controls.Add(this.groceryNum1);
@@ -460,6 +465,26 @@ namespace Chana_Online
             this.label8.TabIndex = 16;
             this.label8.Text = "Chana__";
             // 
+            // addFood2
+            // 
+            this.addFood2.Location = new System.Drawing.Point(854, 80);
+            this.addFood2.Name = "addFood2";
+            this.addFood2.Size = new System.Drawing.Size(142, 34);
+            this.addFood2.TabIndex = 13;
+            this.addFood2.Text = "Add to cart";
+            this.addFood2.UseVisualStyleBackColor = true;
+            this.addFood2.Click += new System.EventHandler(this.addToCart_Click);
+            // 
+            // addFood1
+            // 
+            this.addFood1.Location = new System.Drawing.Point(862, 78);
+            this.addFood1.Name = "addFood1";
+            this.addFood1.Size = new System.Drawing.Size(142, 34);
+            this.addFood1.TabIndex = 25;
+            this.addFood1.Text = "Add to cart";
+            this.addFood1.UseVisualStyleBackColor = true;
+            this.addFood1.Click += new System.EventHandler(this.addToCart_Click);
+            // 
             // FormGrocery
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
@@ -493,7 +518,7 @@ namespace Chana_Online
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.Label Quantity;
         private System.Windows.Forms.NumericUpDown groceryNum3;
-        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Button addFood3;
         private System.Windows.Forms.Label foodTotal3;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label foodVAT3;
@@ -527,5 +552,7 @@ namespace Chana_Online
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button addFood2;
+        private System.Windows.Forms.Button addFood1;
     }
 }

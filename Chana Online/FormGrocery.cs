@@ -14,11 +14,14 @@ namespace Chana_Online
         Grocery grocery2 = new Grocery("Tastic Rice 1kg", "https://i.ibb.co/HGjQgHX/Tastic-1kg.jpg", 17.99, 0.10);
         Grocery grocery3 = new Grocery("Shells Polana Pasta 1kg", "https://i.ibb.co/hVwQ2Yv/shells-polana-pasta-1kg.jpg", 29.99, 0.10);
 
+        //create form fields so this form can open the shop and cart
         FormCart fcart;
-        public FormGrocery(FormCart fc)
+        Form1 fshop;
+        public FormGrocery(FormCart fc, Form1 fs)
         {
             InitializeComponent();
             this.fcart = fc;
+            this.fshop = fs;
         }
 
         private void FormGrocery_Load(object sender, EventArgs e)
@@ -39,35 +42,17 @@ namespace Chana_Online
             foodVAT3.Text = Convert.ToString(grocery3.VAT);
         }
 
-        private void addToCart_Click(object sender, EventArgs e)
-        {
-            var button = sender as Button;
-            System.Diagnostics.Debug.WriteLine(button.Name);
-            switch (button.Name)
-            {
-                case "Meat1":
-                    //cart.Add(meat1);
-                    break;
-                case "Meat2":
-                    // cart.Add(meat2);
-                    break;
-                case "Meat3":
-                    // cart.Add(meat2);
-                    break;
-                default:
-                    Console.WriteLine("do nothing");
-                    break;
-            }
-        }
-
-
         private void groceryNum1_ValueChanged(object sender, EventArgs e)
         {
-            double totalCost = Math.Round(grocery1.Cost * Convert.ToDouble(groceryNum1.Value) * (1 + grocery1.VAT),2);
+            //calculate the total cost and assign it to a variable
+            double totalCost = Math.Round(grocery1.Cost * Convert.ToDouble(groceryNum1.Value) * (1 + grocery1.VAT), 2);
 
+            //display the total cost and assign it to the TotalCost property of the object
             foodTotal1.Text = Convert.ToString(totalCost);
-
             grocery1.TotalCost = totalCost;
+
+            //change the quantity property of ythe object
+            grocery1.Quantity = $"{Convert.ToString(groceryNum1.Value)}";
         }
         private void groceryNum2_ValueChanged(object sender, EventArgs e)
         {
@@ -76,7 +61,7 @@ namespace Chana_Online
             foodTotal2.Text = Convert.ToString(totalCost);
 
             grocery2.TotalCost = totalCost;
-
+            grocery2.Quantity = $"{Convert.ToString(groceryNum2.Value)}";
         }
 
         private void groceryNum3_ValueChanged(object sender, EventArgs e)
@@ -86,19 +71,48 @@ namespace Chana_Online
             foodTotal3.Text = Convert.ToString(totalCost);
 
             grocery3.TotalCost = totalCost;
-
+            grocery3.Quantity = $"{Convert.ToString(groceryNum3.Value)}";
         }
 
+
+        private void addToCart_Click(object sender, EventArgs e)
+        {
+            var button = sender as Button;
+            System.Diagnostics.Debug.WriteLine(button.Name);
+            switch (button.Name)
+            {
+                case "addFood1":
+                    addGroceryToCart(grocery1);
+                    break;
+                case "addFood2":
+                    addGroceryToCart(grocery2);
+                    break;
+                case "addFood3":
+                    addGroceryToCart(grocery3);
+                    break;
+                default:
+                    Console.WriteLine("do nothing");
+                    break;
+            }
+        }
+
+        private void addGroceryToCart(Grocery grocery)
+        {
+            if(grocery.Quantity != "0")
+            {
+                fcart.GridViewGrocery.Rows.Add(grocery.Name, grocery.Quantity, grocery.VAT, grocery.TotalCost);
+            }
+        }
+
+        
         private void showCart(object sender, EventArgs e)
         {
-            FormCart f = new FormCart();
-            f.Show();
+            fcart.Focus();
         }
 
         private void showForm(object sender, EventArgs e)
         {
-            Form1 f = new Form1();
-            f.Show();
+            fshop.Focus();
         }
     }
 }
