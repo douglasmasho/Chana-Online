@@ -56,7 +56,7 @@ namespace Chana_Online
 
         private void btnMeat_Click(object sender, EventArgs e)
         {
-            FormButchery f = new FormButchery(fcart);
+            FormButchery f = new FormButchery(fcart, this);
             f.Show();
         }
 

@@ -136,11 +136,9 @@ namespace Chana_Online
 
 
 
-        private void btnShop_Click(object sender, EventArgs e)
+        private void showForm(object sender, EventArgs e)
         {
-            //this function will take you back to the main page
-            Form1 f = new Form1();
-            f.Show();
+            fshop.Focus();
         }
     }
 }

@@ -14,13 +14,17 @@ namespace Chana_Online
         Meat meat2 = new Meat("Lamb Sausage", "https://i.ibb.co/rZQzVgY/pork-sausage.jpg", 85, 0.15);
         Meat meat3 = new Meat("Steak", "https://i.ibb.co/NWGMQTt/farhad-ibrahimzade-Hhbc-Ihf9vho-unsplash.jpg", 110.5, 0.15);
 
-        //create a form cart member
+        //create a cart form member
         FormCart fcart;
-        public FormButchery(FormCart fc)
+        //create a main page form member
+        Form1 fshop;
+
+        public FormButchery(FormCart fc, Form1 fs)
         {
             InitializeComponent();
             //set it in the consturctor
             this.fcart = fc;
+            this.fshop = fs;
 
         }
 
@@ -70,16 +74,23 @@ namespace Chana_Online
             if(meat.Quantity != "0")
             {
                 fcart.GridViewButchery.Rows.Add(meat.Name, meat.Quantity, meat.VAT, meat.TotalCost);
+                string message = $"Your item {meat.Name} with quantity {meat.Quantity} has been added to the cart";
+                string title = "Added to cart";
+                ShowMessage(message, title);
             }
             else
             {
                 string message = "Please enter a valid number before addding to cart";
                 string title = "Invalid Kilograms";
-                MessageBox.Show(message, title);
+                ShowMessage(message, title);
             }
         }
 
-
+        //this function is for showing a message box to the user
+        private void ShowMessage(string message, string title)
+        {
+            MessageBox.Show(message, title);
+        }
 
         private void meatkgs1_ValueChanged(object sender, EventArgs e)
         {
@@ -124,8 +135,7 @@ namespace Chana_Online
 
         private void showForm(object sender, EventArgs e)
         {
-            Form1 f = new Form1();
-            f.Show();
+            fshop.Focus();
         }
     }
 }
