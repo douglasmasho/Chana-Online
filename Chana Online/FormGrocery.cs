@@ -77,6 +77,7 @@ namespace Chana_Online
 
         private void addToCart_Click(object sender, EventArgs e)
         {
+            //get the button's name and depending on what button is clicked, add the button's corresponding item to the cart
             var button = sender as Button;
             System.Diagnostics.Debug.WriteLine(button.Name);
             switch (button.Name)
@@ -101,15 +102,33 @@ namespace Chana_Online
             if(grocery.Quantity != "0")
             {
                 fcart.GridViewGrocery.Rows.Add(grocery.Name, grocery.Quantity, grocery.VAT, grocery.TotalCost);
+                string message = $"Your item {grocery.Name} with quantity {grocery.Quantity} has been added to the cart";
+                string title = "Added to cart";
+                ShowMessage(message, title);
+            }
+            else
+            {
+                string message = "Please enter a valid number before addding to cart";
+                string title = "Invalid Quantity";
+                ShowMessage(message, title);
             }
         }
 
-        
+        //this function is for showing a message box to the user
+        private void ShowMessage(string message, string title)
+        {
+            MessageBox.Show(message, title);
+        }
+
+
+        //this function will put the cart into focus
         private void showCart(object sender, EventArgs e)
         {
             fcart.Focus();
         }
 
+
+        //this function will put the home pagfe in focus
         private void showForm(object sender, EventArgs e)
         {
             fshop.Focus();

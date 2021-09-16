@@ -44,7 +44,7 @@ namespace Chana_Online
 
         private void addToCart_Click(object sender, EventArgs e)
         {
-            //create a cart form to get the datagridviews
+            //get the button's name and depending on what button is clicked, add the button's corresponding item to the cart
             var button = sender as Button;
             System.Diagnostics.Debug.WriteLine(button.Name);
             switch (button.Name)
@@ -71,7 +71,14 @@ namespace Chana_Online
             {
                 fcart.GridViewButchery.Rows.Add(meat.Name, meat.Quantity, meat.VAT, meat.TotalCost);
             }
+            else
+            {
+                string message = "Please enter a valid number before addding to cart";
+                string title = "Invalid Kilograms";
+                MessageBox.Show(message, title);
+            }
         }
+
 
 
         private void meatkgs1_ValueChanged(object sender, EventArgs e)

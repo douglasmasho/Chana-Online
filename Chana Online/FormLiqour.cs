@@ -87,17 +87,10 @@ namespace Chana_Online
             liqour3.TotalCost = totalCost;
             liqour3.Quantity = $"{Convert.ToString(liqourL3.Value)} Litres";
         }
-        private void addliqourToCart(Liqour liqour)
-        {
-            if(liqour.Quantity != "0")
-            {
-                fcart.GridViewLiqour.Rows.Add(liqour.Name, liqour.Quantity, liqour.VAT, liqour.TotalCost);
-            }
 
-        }
         private void addliqourToCart_Click(object sender, EventArgs e)
         {
-            //create a cart form to get the datagridviews
+            //get the button's name and depending on what button is clicked, add the button's corresponding item to the cart
             var button = sender as Button;
             System.Diagnostics.Debug.WriteLine(button.Name);
             switch (button.Name)
@@ -117,6 +110,31 @@ namespace Chana_Online
                     break;
             }
         }
+
+        private void addliqourToCart(Liqour liqour)
+        {
+            if(liqour.Quantity != "0")
+            {
+                fcart.GridViewLiqour.Rows.Add(liqour.Name, liqour.Quantity, liqour.VAT, liqour.TotalCost);
+                string message = $"Your item {liqour.Name} with quantity {liqour.Quantity} has been added to the cart";
+                string title = "Added to cart";
+                ShowMessage(message, title);
+            }
+            else
+            {
+                string message = "Please enter a valid number before addding to cart";
+                string title = "Invalid Qunatity";
+                ShowMessage(message, title);
+            }
+        }
+
+        //this function is for showing a message box to the user
+        private void ShowMessage(string message, string title)
+        {
+            MessageBox.Show(message, title);
+        }
+
+
 
         private void btnShop_Click(object sender, EventArgs e)
         {
