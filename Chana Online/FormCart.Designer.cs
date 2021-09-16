@@ -30,6 +30,9 @@ namespace Chana_Online
         private void InitializeComponent()
         {
             this.panelCart = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.labelTotal = new System.Windows.Forms.Label();
+            this.btnCheckout = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.GridViewLiqour = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -58,6 +61,9 @@ namespace Chana_Online
             // 
             // panelCart
             // 
+            this.panelCart.Controls.Add(this.label4);
+            this.panelCart.Controls.Add(this.labelTotal);
+            this.panelCart.Controls.Add(this.btnCheckout);
             this.panelCart.Controls.Add(this.label3);
             this.panelCart.Controls.Add(this.GridViewLiqour);
             this.panelCart.Controls.Add(this.label2);
@@ -70,6 +76,36 @@ namespace Chana_Online
             this.panelCart.Name = "panelCart";
             this.panelCart.Size = new System.Drawing.Size(1209, 946);
             this.panelCart.TabIndex = 25;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Poppins", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(579, 32);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(95, 50);
+            this.label4.TabIndex = 37;
+            this.label4.Text = "Total";
+            // 
+            // labelTotal
+            // 
+            this.labelTotal.AutoSize = true;
+            this.labelTotal.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelTotal.Location = new System.Drawing.Point(680, 37);
+            this.labelTotal.Name = "labelTotal";
+            this.labelTotal.Size = new System.Drawing.Size(66, 42);
+            this.labelTotal.TabIndex = 36;
+            this.labelTotal.Text = "000";
+            // 
+            // btnCheckout
+            // 
+            this.btnCheckout.Location = new System.Drawing.Point(1000, 42);
+            this.btnCheckout.Name = "btnCheckout";
+            this.btnCheckout.Size = new System.Drawing.Size(147, 34);
+            this.btnCheckout.TabIndex = 34;
+            this.btnCheckout.Text = "Checkout";
+            this.btnCheckout.UseVisualStyleBackColor = true;
+            this.btnCheckout.Click += new System.EventHandler(this.btnCheckout_Click);
             // 
             // label3
             // 
@@ -314,5 +350,8 @@ namespace Chana_Online
         public System.Windows.Forms.DataGridView GridViewGrocery;
         public System.Windows.Forms.DataGridView GridViewLiqour;
         public System.Windows.Forms.DataGridView GridViewButchery;
+        private System.Windows.Forms.Button btnCheckout;
+        private System.Windows.Forms.Label labelTotal;
+        private System.Windows.Forms.Label label4;
     }
 }

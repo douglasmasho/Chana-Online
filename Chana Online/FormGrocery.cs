@@ -10,6 +10,8 @@ namespace Chana_Online
 {
     public partial class FormGrocery : Form
     {
+        //create grocery objects that will be displayed on the page
+
         Grocery grocery1 = new Grocery("Top Score 1kg", "https://i.ibb.co/hdKxxKQ/Top-score-1kg.jpg", 14.99, 0.10);
         Grocery grocery2 = new Grocery("Tastic Rice 1kg", "https://i.ibb.co/HGjQgHX/Tastic-1kg.jpg", 17.99, 0.10);
         Grocery grocery3 = new Grocery("Shells Polana Pasta 1kg", "https://i.ibb.co/hVwQ2Yv/shells-polana-pasta-1kg.jpg", 29.99, 0.10);
@@ -26,6 +28,8 @@ namespace Chana_Online
 
         private void FormGrocery_Load(object sender, EventArgs e)
         {
+            //display the grocery object details on their corresponding labels and picture boxes
+
             foodPic1.LoadAsync(grocery1.ImageURL);
             foodName1.Text = grocery1.Name;
             foodCost1.Text = Convert.ToString(grocery1.Cost);
@@ -102,6 +106,8 @@ namespace Chana_Online
             if(grocery.Quantity != "0")
             {
                 fcart.GridViewGrocery.Rows.Add(grocery.Name, grocery.Quantity, grocery.VAT, grocery.TotalCost);
+                //calculate the total after adding the item to the cart
+                fcart.CalculateTotal();
                 string message = $"Your item {grocery.Name} with quantity {grocery.Quantity} has been added to the cart";
                 string title = "Added to cart";
                 ShowMessage(message, title);

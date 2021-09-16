@@ -10,6 +10,7 @@ namespace Chana_Online
 {
     public partial class FormButchery : Form
     {
+        //create meat objects that will be displayed on the page
         Meat meat1 = new Meat("Chicken", "https://i.ibb.co/BVG7yGY/breasts.jpg", 60, 0.15);
         Meat meat2 = new Meat("Lamb Sausage", "https://i.ibb.co/rZQzVgY/pork-sausage.jpg", 85, 0.15);
         Meat meat3 = new Meat("Steak", "https://i.ibb.co/NWGMQTt/farhad-ibrahimzade-Hhbc-Ihf9vho-unsplash.jpg", 110.5, 0.15);
@@ -30,6 +31,7 @@ namespace Chana_Online
 
         private void FormButchery_Load(object sender, EventArgs e)
         {
+            //display the meat object details on their corresponding labels and picture boxes
             meatPic1.LoadAsync(meat1.ImageURL);
             meatName1.Text = meat1.Name;
             meatCostpkg1.Text = Convert.ToString(meat1.CostperKG);
@@ -44,6 +46,43 @@ namespace Chana_Online
             meatName3.Text = meat3.Name;
             meatCostpkg3.Text = Convert.ToString(meat3.CostperKG);
             butcheryVAT3.Text = Convert.ToString(meat3.VAT);
+        }
+
+
+        private void meatkgs1_ValueChanged(object sender, EventArgs e)
+        {
+            //calculate the total cost
+            //save it in a variable
+            double totalCost = Math.Round(meat1.CostperKG * Convert.ToDouble(meatkgs1.Value) * (1 + meat1.VAT), 2);
+
+            //assign it to the the TotalCost property in the object and display it
+            meatTotal1.Text = Convert.ToString(totalCost);
+            meat1.TotalCost = totalCost;
+
+            //assign the quantity to the Quantity property of the object
+            meat1.Quantity = $"{Convert.ToString(meatkgs1.Value)} kg";
+        }
+
+        private void meatkgs2_ValueChanged(object sender, EventArgs e)
+        {
+            double totalCost = Math.Round(meat2.CostperKG * Convert.ToDouble(meatkgs2.Value) * (1 + meat2.VAT), 2);
+
+            meatTotal2.Text = Convert.ToString(totalCost);
+
+            meat2.TotalCost = totalCost;
+            meat2.Quantity = $"{Convert.ToString(meatkgs2.Value)} kg";
+        }
+
+        private void meatkgs3_ValueChanged(object sender, EventArgs e)
+        {
+            double totalCost = Math.Round(meat3.CostperKG * Convert.ToDouble(meatkgs3.Value) * (1 + meat3.VAT), 2);
+
+            meatTotal3.Text = Convert.ToString(totalCost);
+
+            meat3.TotalCost = totalCost;
+            meat3.Quantity = $"{Convert.ToString(meatkgs3.Value)} kg";
+
+
         }
 
         private void addToCart_Click(object sender, EventArgs e)
@@ -74,6 +113,8 @@ namespace Chana_Online
             if(meat.Quantity != "0")
             {
                 fcart.GridViewButchery.Rows.Add(meat.Name, meat.Quantity, meat.VAT, meat.TotalCost);
+                //calculate the total after adding the item to the cart
+                fcart.CalculateTotal();
                 string message = $"Your item {meat.Name} with quantity {meat.Quantity} has been added to the cart";
                 string title = "Added to cart";
                 ShowMessage(message, title);
@@ -90,42 +131,6 @@ namespace Chana_Online
         private void ShowMessage(string message, string title)
         {
             MessageBox.Show(message, title);
-        }
-
-        private void meatkgs1_ValueChanged(object sender, EventArgs e)
-        {
-            //calculate the total cost
-            //save it in a variable
-            double totalCost = Math.Round(meat1.CostperKG * Convert.ToDouble(meatkgs1.Value) * (1 + meat1.VAT),2);
-
-            //assign it to the the TotalCost property in the object and display it
-            meatTotal1.Text = Convert.ToString(totalCost);
-            meat1.TotalCost = totalCost;
-
-            //assign the quantity to the Quantity property of the object
-            meat1.Quantity = $"{Convert.ToString(meatkgs1.Value)} kg";
-        }
-
-        private void meatkgs2_ValueChanged(object sender, EventArgs e)
-        {
-            double totalCost = Math.Round(meat2.CostperKG * Convert.ToDouble(meatkgs2.Value) * (1 + meat2.VAT),2);
-
-            meatTotal2.Text = Convert.ToString(totalCost);
-
-            meat2.TotalCost = totalCost;
-            meat2.Quantity = $"{Convert.ToString(meatkgs2.Value)} kg";
-        }
-
-        private void meatkgs3_ValueChanged(object sender, EventArgs e)
-        {
-            double totalCost = Math.Round(meat3.CostperKG * Convert.ToDouble(meatkgs3.Value) * (1 + meat3.VAT),2);
-
-            meatTotal3.Text = Convert.ToString(totalCost);
-
-            meat3.TotalCost = totalCost;
-            meat3.Quantity = $"{Convert.ToString(meatkgs3.Value)} kg";
-
-
         }
 
         private void showCart(object sender, EventArgs e)

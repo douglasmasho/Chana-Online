@@ -10,6 +10,7 @@ namespace Chana_Online
 {
     public partial class FormLiqour : Form
     {
+        //create liqour objects that will be displayed on the page
         Liqour liqour1 = new Liqour("Hennessy", "https://i.ibb.co/sRwLRgF/hennessy-X-O.jpg", 60);
         Liqour liqour2 = new Liqour("Jameson", "https://i.ibb.co/NNtRsrf/liquor-store-jameson-select-reserve.jpg", 85);
         Liqour liqour3 = new Liqour("Amarula", "https://i.ibb.co/LSw8XK5/liquor-store.jpg", 110.5);
@@ -36,7 +37,7 @@ namespace Chana_Online
 
         private void FormLiqour_Load(object sender, EventArgs e)
         {
-
+            //display the liqour object details on their corresponding labels and picture boxes
             liqourPic3.LoadAsync(liqour3.ImageURL);
             liqourLabel3.Text = liqour3.Name;
             liqourCost3.Text = Convert.ToString(liqour3.Cost);
@@ -116,6 +117,8 @@ namespace Chana_Online
             if(liqour.Quantity != "0")
             {
                 fcart.GridViewLiqour.Rows.Add(liqour.Name, liqour.Quantity, liqour.VAT, liqour.TotalCost);
+                //calculate the total after adding the item to the cart
+                fcart.CalculateTotal();
                 string message = $"Your item {liqour.Name} with quantity {liqour.Quantity} has been added to the cart";
                 string title = "Added to cart";
                 ShowMessage(message, title);
