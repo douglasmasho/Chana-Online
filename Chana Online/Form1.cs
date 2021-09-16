@@ -12,130 +12,59 @@ namespace Chana_Online
 {
     public partial class Form1 : Form
     {
+        FormCart fcart = new FormCart();
+       
+
+        List<object> cart = new List<object>();
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            fcart.Show();
+
+        }
+
         public Form1()
         {
             InitializeComponent();
+
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        
+
+        private void button8_Click(object sender, EventArgs e)
         {
 
         }
-
-        private void Form1_Load(object sender, EventArgs e) { 
-            panelCart.Visible = false;
-            panelShop.Visible = true;
-            panelButchery.Visible = false;
-            panelGrocery.Visible = false;
-            panelLiqour.Visible = false;
-        }
-
-        private void label2_Click(object sender, EventArgs e)
+        
+        private void btnShop_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void btnMeat_Click(object sender, EventArgs e)
-        {
-            panelShop.Visible = false;
-            panelButchery.Visible = true;
+            Form1 f = new Form1();
+            f.Show();
         }
 
         private void btnFood_Click(object sender, EventArgs e)
         {
-            panelCart.Visible = false;
-            panelShop.Visible = true;
-            panelButchery.Visible = false;
-            panelGrocery.Visible = true;
-            panelLiqour.Visible = false;
+            FormGrocery f = new FormGrocery(fcart, this);
+            f.Show();
         }
 
         private void btnLiqour_Click(object sender, EventArgs e)
         {
-            panelCart.Visible = false;
-            panelShop.Visible = true;
-            panelButchery.Visible = false;
-            panelGrocery.Visible = false;
-            panelLiqour.Visible = true;
+            FormLiqour f = new FormLiqour(fcart, this);
+            f.Show();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnMeat_Click(object sender, EventArgs e)
         {
-
+            FormButchery f = new FormButchery(fcart, this);
+            f.Show();
         }
 
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnCart1_Click(object sender, EventArgs e)
         {
-            panelCart.Visible = true;
-            panelShop.Visible = true;
-            panelButchery.Visible = false;
-            panelGrocery.Visible = false;
-            panelLiqour.Visible = false;
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-
-        }
-
-        private void panelButchery_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void btnShop_Click(object sender, EventArgs e)
-        {
-            panelCart.Visible = false;
-            panelShop.Visible = true;
-            panelButchery.Visible = false;
-            panelGrocery.Visible = false;
-            panelLiqour.Visible = false;
-        }
-
-        private void label16_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
+            FormCart f = new FormCart();
+            f.Show();
         }
     }
 }
